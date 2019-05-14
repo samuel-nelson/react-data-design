@@ -10,7 +10,7 @@ require_once dirname(__DIR__, 3) . "/lib/uuid.php";
 require_once("/etc/apache2/capstone-mysql/Secrets.php");
 
 
-use Edu\Cnm\DataDesign\ {
+use UssHopper\DataDesign\ {
 	Profile
 };
 

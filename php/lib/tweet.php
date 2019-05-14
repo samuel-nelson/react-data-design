@@ -1,13 +1,14 @@
 <?php
-require_once(dirname(__DIR__, 2) . "/vendor/autoload.php");
+require_once(dirname(__DIR__) . "/vendor/autoload.php");
 require_once(dirname(__DIR__) . "/classes/autoload.php");
 require("uuid.php");
-require_once("/etc/apache2/capstone-mysql/encrypted-config.php");
 
-use Edu\Cnm\DataDesign\{Tweet, Profile};
+$secrets = new \Secrets("/etc/apache2/capstone-mysql/ddctwitter.ini");
+$pdo = $secrets->getPdoObject();
+
+use  UssHopper\DataDesign\{Tweet, Profile};
 
 
-$pdo = connectToEncryptedMySQL("/etc/apache2/capstone-mysql/ddctwitter.ini");
 
 $password = "abc123";
 $hash = password_hash($password, PASSWORD_ARGON2I, ["time_cost" => 384]);

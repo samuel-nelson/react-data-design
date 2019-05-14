@@ -1,7 +1,7 @@
 <?php
-namespace Edu\Cnm\DataDesign\Test;
+namespace  UssHopper\DataDesign\Test;
 
-use Edu\Cnm\DataDesign\Profile;
+use UssHopper\DataDesign\Profile;
 
 
 

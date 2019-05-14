@@ -8,7 +8,7 @@ require_once dirname(__DIR__, 3) . "/lib/jwt.php";
 require_once dirname(__DIR__, 3) . "/lib/uuid.php";
 
 
-use Edu\Cnm\DataDesign\{
+use UssHopper\DataDesign\{
 	Like
 };
 

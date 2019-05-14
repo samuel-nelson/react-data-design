@@ -1,7 +1,7 @@
 <?php
 require_once dirname(__DIR__,3 ) .  "/lib/xsrf.php";
 
-use Edu\Cnm\DataDesign;
+use UssHopper\DataDesign;
 
 $reply = new stdClass();
 $reply->status = 200;
